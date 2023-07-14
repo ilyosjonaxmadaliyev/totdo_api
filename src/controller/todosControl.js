@@ -54,6 +54,8 @@ const postOneTodo = async (req, res) => {
   }
 };
 
+// Put one todo
+
 const putOneTodo = async (req, res) => {
   try {
     const { title, date } = req.body;
@@ -69,6 +71,8 @@ const putOneTodo = async (req, res) => {
     res.send(error);
   }
 };
+
+// Delete one todo
 
 const deleteOneTodo = async (req, res) => {
   try {
